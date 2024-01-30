@@ -6,5 +6,5 @@ const app=express();
 app.use(cors());
 app.use(json())
 app.use('/',route);
-
-app.listen(8000,()=>console.log(8000+"engine start"));
+const port=process.env.PORT
+app.listen(port,()=>console.log(port+"engine start"));
